@@ -1,0 +1,80 @@
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .rabbit {
+      position: relative;
+      width: 150px;
+      height: 200px;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      border-radius: 50% 50% 45% 45%;
+    }
+
+    .rabbit::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      border-radius: 50%;
+      top: -60px;
+      left: 25px;
+    }
+
+    .ear {
+      position: absolute;
+      width: 40px;
+      height: 80px;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      border-radius: 50% 50% 0 0;
+      top: -80px;
+    }
+
+    .ear.left {
+      left: 10px;
+    }
+
+    .ear.right {
+      right: 10px;
+    }
+
+    .eye {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: black;
+      border-radius: 50%;
+      top: 60px;
+    }
+
+    .eye.left {
+      left: 40px;
+    }
+
+    .eye.right {
+      right: 40px;
+    }
+
+    .nose {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: pink;
+      border-radius: 50%;
+      top: 100px;
+      left: calc(50% - 7.5px);
+    }
+
+    .mouth {
+      position: absolute;
+      width: 40px;
+      height: 20px;
+      top: 120px;
+      left: calc(50% - 20px);
+      border-bottom: 3px solid black;
+      border-radius: 50%;
+    }
